@@ -25,22 +25,20 @@
   <div class="container">
   <!-- Header -->
     <div class="header bg-gradient-primarys py-lg-4">
-	     <div class="container">
+	  <div class="container">
         <div class="header-body text-center mb-7">
           <div class="row justify-content-center">
-            <div class="col-lg-51 col-md-6">
-              <h1 class="text-primary">Welcome!</h1>
-              <p class="text-lead text-primary">To Blue Pearl Operational System.</p>
-            </div>
+			  <div class="col-lg-51 col-md-6">
+				  <h1 class="text-primary">Welcome!</h1>
+				  <p class="text-lead text-primary">To Blue Pearl Operational System.</p>
+			  </div>
           </div>
         </div>
       </div>
-	  </div>
+	</div>
     <!-- Outer Row -->
     <div class="row justify-content-center">
-
       <div class="col-xl-10 col-lg-12 col-md-9">
-
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
@@ -52,21 +50,24 @@
                     <h1 class="h4 text-gray-900 mb-4"><img height="100" width="210" src="img/logo1.png"></h1>
                   </div>
                   <form class="user" action=""  method="POST" onsubmit="return login();">
+					<!-- Email -->
                     <div class="form-group" data-validate = "Valid email is required: ex@abc.xyz">
                       <input type="email" class="form-control form-control-user" id="emailAddress" aria-describedby="emailHelp" placeholder="Email Address" required autofocus>
                     </div>
+					<!-- Password -->
                     <div class="form-group" data-validate = "Password is required">
                       <input type="password" class="form-control form-control-user" id="idPass" placeholder="Password" required autofocus>
                     </div>
+					<!-- Remember Me -->
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
                         <input type="checkbox" class="custom-control-input" id="customCheck">
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
-                    <button class="btn btn-primary btn-user btn-block">
-                      Login
-                    </button>
+					<!-- Login Button -->
+                    <button class="btn btn-primary btn-user btn-block">Login</button>
+					<!-- Error Message -->
                     <p id="Perror"> </p>
                   </form>
                   <hr>
@@ -81,44 +82,41 @@
 </div>
 
 <script type="text/javascript">
-	 function login(){
-	  var vEmail=$("#emailAddress").val();
-		var vPass=$("#idPass").val();
+ function login(){
+  var vEmail=$("#emailAddress").val();
+	var vPass=$("#idPass").val();
 
-		if(vEmail!="" && vPass!="")
-		{
-			$.ajax({
-					type:"POST",
-					url:"login.php",
-					data:{"email":vEmail,"password":vPass},
-					success:function(result){
-					//alert(result);
-					if(result=="fail"){
-					//alert("invalid");
-					$("#Perror").html("Incorrect email or password!");
-					$("#Perror").css("color", "red").css("text-align","center");
-					}
-					else{
-					window.location.href = 'admin.php';
-					}
+	if(vEmail!="" && vPass!="")
+	{
+		$.ajax({
+				type:"POST",
+				url:"login.php",
+				data:{"email":vEmail,"password":vPass},
+				success:function(result){
+				//alert(result);
+				if(result=="fail"){
+				//alert("invalid");
+				$("#Perror").html("Incorrect email or password!");
+				$("#Perror").css("color", "red").css("text-align","center");
 				}
+				else{
+				window.location.href = 'admin.php';
+				}
+			}
 
-			});
-		}
-		return false;
-	 }
-	</script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
+		});
+	}
+	return false;
+ }
+</script>
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
   
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-  
-
 </body>
 
 </html>

@@ -224,7 +224,7 @@
   					  <th>Action</th>
   					</tr>
 				  </thead>
-          <tfoot>
+                  <tfoot>
   					<tr>
   					  <th>ID</th>
   					  <th width='15%'>Team Member</th>
@@ -238,36 +238,36 @@
   					  <th>Action</th>
   					</tr>
 				  </tfoot>
-          <tbody>
+                  <tbody>
 				  <?php
-            while($fetch = mysqli_fetch_array($result)){
-              ?>
-              <tr>
-	              <td> <?php echo $fetch['ID']; ?></td>
-                <td> <?php echo $fetch['TEAM_MEMBER']; ?></td>
-                <td> <?php echo $fetch['COMPANY']; ?></td>
-                <td> <?php echo $fetch['PROJECT']; ?></td>
-                <td> <?php echo $fetch['DA_TE']; ?></td>
-                <td> <?php echo $fetch['WEEK']; ?></td>
-                <td> <?php echo $fetch['MONTH']; ?></td>
-    						<td> <?php echo $fetch['BUDGET_MIN']; ?></td>
-    						<td> <?php echo $fetch['ACTUAL_MIN']; ?></td>
-                <td width='10%'>
-    							<a type="submit" id="<?php echo $fetch['ID']; ?>" class="view_btn text-primary" Title="view" data-toggle="tooltip"><i class="text-primary far fa-eye"></i></a>
-    							<a type="submit" id="<?php echo $fetch['ID']; ?>" class="edit_btn text-primary" Title="edit" data-toggle="tooltip"><i class="text-primary fas fa-pencil-alt"></i></a>
-		            </td>
-              </tr>
-            <?php
-              }
-	           ?>
-            </tbody>
-          </table>
-      </div>
-    </div>
-  </div>
-</div>
+                    while($fetch = mysqli_fetch_array($result)){
+                  ?>
+				  <tr>
+					<td> <?php echo $fetch['ID']; ?></td>
+					<td> <?php echo $fetch['TEAM_MEMBER']; ?></td>
+					<td> <?php echo $fetch['COMPANY']; ?></td>
+					<td> <?php echo $fetch['PROJECT']; ?></td>
+					<td> <?php echo $fetch['DA_TE']; ?></td>
+					<td> <?php echo $fetch['WEEK']; ?></td>
+					<td> <?php echo $fetch['MONTH']; ?></td>
+					<td> <?php echo $fetch['BUDGET_MIN']; ?></td>
+					<td> <?php echo $fetch['ACTUAL_MIN']; ?></td>
+					<td width='10%'>
+					   <a type="submit" id="<?php echo $fetch['ID']; ?>" class="view_btn text-primary" Title="view" data-toggle="tooltip"><i class="text-primary far fa-eye"></i></a>
+					   <a type="submit" id="<?php echo $fetch['ID']; ?>" class="edit_btn text-primary" Title="edit" data-toggle="tooltip"><i class="text-primary fas fa-pencil-alt"></i></a>
+					</td>
+				  </tr>
+                  <?php
+                   }
+	              ?>
+                 </tbody>
+               </table>
+            </div>
+           </div>
+          </div>
+         </div>
         <!-- /.container-fluid -->
-</div>
+      </div>
       <!-- End of Main Content -->
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
@@ -293,10 +293,10 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form action="addProjectHours.php" method="post">
-				<div class="modal-header">
-					<h4 class="modal-title">Add Project</h4>
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				</div>
+		    <div class="modal-header">
+			 <h4 class="modal-title">Add Project</h4>
+			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
 			<div class="modal-body">
               <div class="form-group">
                <label><b><i class="nc-icon nc-circle-10"></i> Team Member</b></label>
