@@ -235,16 +235,17 @@
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+  <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-  <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+  
   <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <!--script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script-->
   <script src="js/core/main.min.js"></script>
   <script src="js/daygrid/main.min.js"></script>
   <script src="js/bootstrap/main.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
