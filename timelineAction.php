@@ -46,12 +46,6 @@
   <link href="fullcalendar/core/main.min.css" rel="stylesheet" />
   <link href="fullcalendar/daygrid/main.min.css" rel="stylesheet" />
   <link href="fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
-  <script>
-   if (typeof module === 'object') {
-    window.module = module; 
-    module = undefined;
-   }
-  </script>
 
 </head>
 
@@ -237,7 +231,7 @@
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -250,6 +244,7 @@
   <script src="js/core/main.min.js"></script>
   <script src="js/daygrid/main.min.js"></script>
   <script src="js/bootstrap/main.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {

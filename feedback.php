@@ -33,12 +33,7 @@
   <link rel ="icon" href="img/logo2.png" type="image/x-icon">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  <script>
-   if (typeof module === 'object') {
-    window.module = module; 
-    module = undefined;
-   }
-  </script>
+
 </head>
 
 <body id="page-top">
@@ -229,13 +224,14 @@
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
