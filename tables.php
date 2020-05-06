@@ -48,6 +48,12 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <script>
+   if (typeof module === 'object') {
+    window.module = module; 
+    module = undefined;
+   }
+  </script>
 </head>
 
 <body id="page-top">

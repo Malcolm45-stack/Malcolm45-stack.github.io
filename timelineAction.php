@@ -46,7 +46,12 @@
   <link href="fullcalendar/core/main.min.css" rel="stylesheet" />
   <link href="fullcalendar/daygrid/main.min.css" rel="stylesheet" />
   <link href="fullcalendar/bootstrap/main.min.css" rel="stylesheet" />
-
+  <script>
+   if (typeof module === 'object') {
+    window.module = module; 
+    module = undefined;
+   }
+  </script>
 
 </head>
 

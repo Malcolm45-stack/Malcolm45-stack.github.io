@@ -33,6 +33,12 @@
   <link rel ="icon" href="img/logo2.png" type="image/x-icon">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <script>
+   if (typeof module === 'object') {
+    window.module = module; 
+    module = undefined;
+   }
+  </script>
 </head>
 
 <body id="page-top">
