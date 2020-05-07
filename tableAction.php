@@ -328,7 +328,7 @@
 		  <!-- Date To Be Completed -->
 		  <div class="form-group">
 			<label><b><i class="nc-icon nc-time-alarm"></i>Date To Be Completed</b></label>
-			<input type="date" name="Date_to_be_Completed" class="form-control datepicker" required>
+			<input type="date" name="Date_to_be_Complete" class="form-control datepicker" required>
 		  </div>
 		  <!-- Challenges -->
 		  <div class="form-group">
