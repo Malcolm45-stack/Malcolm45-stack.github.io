@@ -254,7 +254,7 @@
           plugins: ['dayGrid','bootstrap'],
           themeSystem: 'bootstrap',
           weekNumbers: true,
-          eventLimit: false,
+          eventLimit: true,
           events: [
             <?php
              foreach($result as $row)
