@@ -6,7 +6,8 @@
     {
 
         $Date_Logged= mysqli_real_escape_string($con,$_POST['Date_Logged']);
-
+		$date3 = new DateTime($Date_Completed);
+		
         $Action_Item = mysqli_real_escape_string($con,$_POST['Action_Item']);
 
         $Team_Member2 = mysqli_real_escape_string($con,$_POST['Team_Member2']);
@@ -31,7 +32,7 @@
 
         $Variance = $date1->diff($date2)->format('%a');
 
-        $Column_1 = $date1->diff($date2)->format('%a');
+        $Column_1 = $date3->diff($date2)->format('%a');
 
 
         if (!$con)
