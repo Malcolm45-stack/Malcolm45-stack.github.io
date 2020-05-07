@@ -499,7 +499,7 @@
 
   <!-- Bootstrap core JavaScript-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
