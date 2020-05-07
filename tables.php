@@ -49,11 +49,6 @@
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   
-  <script >
-	$(document).ready(function() {
-    $('#dataTable').DataTable();
-	} );
-  </script>
 </head>
 
 <body id="page-top">
@@ -502,6 +497,11 @@
     </div>
   </div>
 
+  <script >
+	$(document).ready(function() {
+    $('#dataTable').DataTable();
+	} );
+  </script>
   <!-- Bootstrap core JavaScript-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -516,8 +516,8 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>
   
 
   <script>
