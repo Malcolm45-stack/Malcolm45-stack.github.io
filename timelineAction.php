@@ -84,14 +84,16 @@
           <i class="fas fa-fw fa-table"></i>
           <span>Planning Timesheet</span></a>
       </li>
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-      <!-- Nav Item - Tables -->
-      <li class="nav-item">
-        <a class="nav-link" href="tableAction.php">
-          <i class="fas fa-border-none"></i>
-          <span>Action Timesheet</span></a>
-      </li>
+      <?php
+      if($_SESSION['username'] == "Kamohelo") {
+       echo '<hr class="sidebar-divider">';
+       echo '<li class="nav-item">
+            <a class="nav-link" href="tableAction.php">
+            <i class="fas fa-border-none"></i>
+            <span>Action Timesheet</span></a>
+           </li>';
+        }
+       ?>
       <!-- Divider -->
       <hr class="sidebar-divider">
       <!-- Nav Item - Tables -->
