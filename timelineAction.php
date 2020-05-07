@@ -254,7 +254,7 @@
           plugins: ['dayGrid','bootstrap'],
           themeSystem: 'bootstrap',
           weekNumbers: true,
-          eventLimit: true,
+          eventLimit: false,
           events: [
             <?php
              foreach($result as $row)
@@ -264,7 +264,7 @@
 
                 title: "<?php echo "".$row['Action_Item'].""; ?>",
                 start: "<?php echo "".$row['Date_Logged']."" ; ?>",
-                end: "<?php echo "".$row['Date_Completed']."" ; ?>"
+                end:   "<?php echo "".$row['Date_Completed']."" ; ?>"
             },
             <?php
              }
