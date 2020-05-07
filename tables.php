@@ -497,11 +497,6 @@
     </div>
   </div>
 
-  <script >
-	$(document).ready(function() {
-    $('#dataTable').DataTable();
-	} );
-  </script>
   <!-- Bootstrap core JavaScript-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -519,7 +514,12 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
   
-
+  <script >
+	$(document).ready(function() {
+    $('#dataTable').DataTable();
+	} );
+  </script>
+  
   <script>
   $(document).ready(function(){
 	  $(document).on('click','.edit_btn', function(){
