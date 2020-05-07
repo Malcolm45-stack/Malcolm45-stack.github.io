@@ -22,7 +22,6 @@
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
 
-    //$result = mysqli_query($con,"SELECT * FROM employees");
     $result = mysqli_query($con,"SELECT * FROM actions WHERE Responsible_person ='". $_SESSION['username'] ."'");
 ?>
 <!DOCTYPE HTML>
@@ -87,7 +86,7 @@
       <?php
       if($_SESSION['username'] == "Kamohelo") {
        echo '<hr class="sidebar-divider">';
-       echo '<li class="nav-item active">
+       echo '<li class="nav-item">
             <a class="nav-link" href="tableAction.php">
             <i class="fas fa-border-none"></i>
             <span>Action Timesheet</span></a>

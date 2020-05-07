@@ -86,7 +86,7 @@
    <?php
       if($_SESSION['username'] == "Kamohelo") {
        echo '<hr class="sidebar-divider">';
-       echo '<li class="nav-item">
+       echo '<li class="nav-item active">
             <a class="nav-link" href="tableAction.php">
             <i class="fas fa-border-none"></i>
             <span> Action Timesheet</span></a>
