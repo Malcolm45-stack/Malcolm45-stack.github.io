@@ -540,7 +540,7 @@
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7/js/sb-admin-2.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
