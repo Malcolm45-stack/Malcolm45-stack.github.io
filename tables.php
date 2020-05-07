@@ -514,12 +514,7 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
   
-  <script >
-	$(document).ready(function() {
-    $('#dataTable').DataTable();
-	} );
-  </script>
-  
+
   <script>
   $(document).ready(function(){
 	  $(document).on('click','.edit_btn', function(){
