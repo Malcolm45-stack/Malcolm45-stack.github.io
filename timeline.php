@@ -236,7 +236,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
   <!-- Custom scripts for all pages-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7/js/sb-admin-2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7/js/sb-admin-2.js"></script>
   <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <!--script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script-->
