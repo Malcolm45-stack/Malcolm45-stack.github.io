@@ -22,7 +22,6 @@
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
 
-    //$result = mysqli_query($con,"SELECT * FROM employees");
     $result = mysqli_query($con,"SELECT * FROM employees WHERE TEAM_MEMBER ='". $_SESSION['username'] ."'");
 ?>
 <!DOCTYPE HTML>

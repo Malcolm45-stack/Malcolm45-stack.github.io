@@ -179,7 +179,7 @@
           <!-- Content Row -->
           <div class="row">
 			      <div class="card-body">
-             <iframe width="1240" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=f75f7f5a-2c7c-4a6c-b063-eff041120051&autoAuth=true&ctid=4b21de51-57a1-43ab-988d-629722832b65&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
+             <iframe width="1200" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=f75f7f5a-2c7c-4a6c-b063-eff041120051&autoAuth=true&ctid=4b21de51-57a1-43ab-988d-629722832b65&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
 			      </div>
 		     </div>
          </div>
