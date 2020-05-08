@@ -88,7 +88,7 @@
           <span>Planning Timesheet</span></a>
       </li>
       <?php
-      if($_SESSION['username'] == "Kamohelo") {
+      if($_SESSION['username'] == "Kamohelo" OR "Saireshan") {
        echo '<hr class="sidebar-divider">';
        echo '<li class="nav-item">
             <a class="nav-link" href="tableAction.php">
