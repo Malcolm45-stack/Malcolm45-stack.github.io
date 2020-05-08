@@ -53,37 +53,38 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
  <!-- Sidebar -->
- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-   <!-- Sidebar - Brand -->
-   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.php">
-	<div class="sidebar-brand-icon rotate-n-15"><img height="42" width="42" src="img/logo2.png"></div>
-	<div class="sidebar-brand-text mx-3">Blue Pearl Admin </div>
-   </a>
-   <div class="sidebar-heading">Dashboard</div>
-   <!-- Divider -->
-   <hr class="sidebar-divider my-0">
-   <!-- Nav Item - Dashboard -->
-   <li class="nav-item">
-	<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-	<i class="fas fa-fw fa-tachometer-alt"></i>
-	<span>Dashboard</span></a>
-	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-	 <div class="bg-white py-2 collapse-inner rounded">
-	 <h6 class="collapse-header">Types Of Dashboards:</h6>
-	  <a class="collapse-item" href="admin.php">Planning Dashboard</a>
-	  <a class="collapse-item" href="actionDash.php">Action Items Dashboard</a>
-	 </div>
-	</div>
-   </li>
-   <!-- Divider -->
-   <hr class="sidebar-divider">
-   <!-- Nav Item - Planning Timesheet -->
-   <li class="nav-item">
-	<a class="nav-link" href="tables.php">
-	<i class="fas fa-fw fa-table"></i>
-	<span>Planning Timesheet</span></a>
-   </li>
-   <?php
+ <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.php">
+         <div class="sidebar-brand-icon rotate-n-15"><img height="42" width="42" src="img/logo2.png"></div>
+         <div class="sidebar-brand-text mx-3">Blue Pearl Admin </div>
+      </a>
+      <div class="sidebar-heading">Dashboard</div>
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Types Of Dashboards:</h6>
+            <a class="collapse-item" href="admin.php">Planning Dashboard</a>
+            <a class="collapse-item" href="actionDash.php">Action Items Dashboard</a>
+          </div>
+          </div>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.php">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Planning Timesheet</span></a>
+      </li>
+      <?php
       if($_SESSION['username'] == "Kamohelo" OR "Saireshan") {
        echo '<hr class="sidebar-divider">';
        echo '<li class="nav-item active">
@@ -93,37 +94,38 @@
            </li>';
         }
        ?>
-   <!-- Divider -->
-   <hr class="sidebar-divider">
-   <!-- Nav Item - Planning Timeline -->
-   <li class="nav-item">
-	<a class="nav-link" href="timeline.php">
-	<i class="fas fa-stream"></i>
-	<span>Planning Timeline</span></a>
-   </li>
-   <!-- Divider -->
-   <hr class="sidebar-divider">
-   <!-- Nav Item - Action Timeline -->
-   <li class="nav-item">
-	<a class="nav-link" href="timelineAction.php">
-	<i class="fas fa-heartbeat"></i>
-	<span>Action Timeline</span></a>
-   </li>
-   <!-- Divider -->
-   <hr class="sidebar-divider d-none d-md-block">
-   <!-- Nav Item - Product Feedback -->
-   <li class="nav-item">
-	<a class="nav-link" href="feedback.php">
-	<i class="far fa-comment-alt"></i>
-	<span>Product Feedback</span></a>
-   </li>
-   <!-- Divider -->
-   <hr class="sidebar-divider d-none d-md-block">
-   <!-- Sidebar Toggler (Sidebar) -->
-   <div class="text-center d-none d-md-inline">
-   <button class="rounded-circle border-0" id="sidebarToggle"></button>
-  </div>
-</ul>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="timeline.php">
+          <i class="fas fa-stream"></i>
+          <span>Planning Timeline</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="timelineAction.php">
+          <i class="fas fa-heartbeat"></i>
+          <span>Action Timeline</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+      <li class="nav-item">
+        <a class="nav-link" href="feedback.php">
+          <i class="far fa-comment-alt"></i>
+          <span>Product Feedback</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
 <!-- End of Sidebar -->
 
 <!-- Content Wrapper -->

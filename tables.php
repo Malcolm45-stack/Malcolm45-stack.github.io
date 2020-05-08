@@ -23,7 +23,7 @@
     }
     
 	 //$result = mysqli_query($con,"SELECT * FROM employees WHERE TEAM_MEMBER ='". $_SESSION['username'] ."'");
-	 $result = mysqli_query($con,"SELECT * FROM employees  ");
+	 $result = mysqli_query($con,"SELECT * FROM employees");
 
 
 
@@ -58,6 +58,7 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
 
+    <!-- Sidebar -->
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
       <!-- Sidebar - Brand -->
@@ -130,6 +131,7 @@
       </div>
 
     </ul>
+    <!-- End of Sidebar -->
     <!-- End of Sidebar -->
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
