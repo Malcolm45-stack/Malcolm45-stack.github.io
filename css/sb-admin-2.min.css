@@ -21,5 +21,5 @@
   align-items: center;
   padding: 15px;
   background-image: linear-gradient(rgba(255, 255, 254, 0.7), rgba(0, 0, 0, 0.7)),url("../img/BackImage.jpg");
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
 }}
