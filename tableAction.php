@@ -243,8 +243,8 @@
 			   <td> <?php echo $fetch['Date_to_be_Complete']; ?></td>
 			   <td> <?php echo $fetch['Date_Completed']; ?></td>
 			   <td width='10%'>
-				  <a type="submit" id="<?php echo $fetch['ID']; ?>" class="view_btns text-primary" Title="view" data-toggle="tooltip"><i class="text-primary far fa-eye"></i></a>
-				  <a type="submit" id="<?php echo $fetch['ID']; ?>" class="edit_btns text-primary" Title="edit" data-toggle="tooltip"><i class="text-primary fas fa-pencil-alt"></i></a>
+				  <a type="submit" id="<?php echo $fetch['ID']; ?>" class="view_btns btn btn-primary" Title="view" data-toggle="tooltip"><i class="text-primary far fa-eye"></i></a>
+				  <a type="submit" id="<?php echo $fetch['ID']; ?>" class="edit_btns btn btn-secondary" Title="edit" data-toggle="tooltip"><i class="text-primary fas fa-pencil-alt"></i></a>
 			   </td>
 			 </tr>
 		   <?php
