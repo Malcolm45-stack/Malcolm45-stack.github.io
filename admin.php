@@ -174,7 +174,7 @@
           <div class="row">
 			      <div class="card shadow mb-4">
 				  
-				  <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYTlhMTcyZDctYzdhNi00YzcwLTk4OWItMWRmYmM2MDhkY2JiIiwidCI6IjRiMjFkZTUxLTU3YTEtNDNhYi05ODhkLTYyOTcyMjgzMmI2NSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+				  <iframe width="1245" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYTlhMTcyZDctYzdhNi00YzcwLTk4OWItMWRmYmM2MDhkY2JiIiwidCI6IjRiMjFkZTUxLTU3YTEtNDNhYi05ODhkLTYyOTcyMjgzMmI2NSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
 		     </div>
          </div>
