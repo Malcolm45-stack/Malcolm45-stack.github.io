@@ -565,11 +565,11 @@ $(document).ready(function(){
 			  $('#Team_Member2').val(data.Team_Member2);
 			  $('#Team_Member3').val(data.Team_Member3);
 			  $('#Status').val(data.Status);
-	  $('#Challenges').val(data.Challenges);
-	  $('#Date_to_be_Complete').val(data.Date_to_be_Complete);
-	  $('#Date_Completed').val(data.Date_Completed);
+			  $('#Challenges').val(data.Challenges);
+	          $('#Date_to_be_Complete').val(data.Date_to_be_Complete);
+	          $('#Date_Completed').val(data.Date_Completed);
 			  $('#employee_ids').val(data.id);
-	  $('#updatedatas').val('Update');
+	          $('#updatedatas').val('Update');
 			  $('#editActionModal').modal('show');
 
 		  }
