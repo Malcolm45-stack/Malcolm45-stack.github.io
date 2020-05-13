@@ -173,7 +173,8 @@
           <!-- Content Row -->
           <div class="row">
 			      <div class="card shadow mb-4">
-				  <iframe width="1245" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d56e8e58-e05c-4772-b47a-09cfc83f883c&autoAuth=true&ctid=4b21de51-57a1-43ab-988d-629722832b65&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
+				  
+				  <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYTlhMTcyZDctYzdhNi00YzcwLTk4OWItMWRmYmM2MDhkY2JiIiwidCI6IjRiMjFkZTUxLTU3YTEtNDNhYi05ODhkLTYyOTcyMjgzMmI2NSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
             </div>
 		     </div>
          </div>
