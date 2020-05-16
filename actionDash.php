@@ -34,7 +34,7 @@
   <link rel ="icon" href="img/logo2.png" type="image/x-icon">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  
+
 </head>
 
 <body id="page-top">
@@ -234,7 +234,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-  
+
 
 </body>
 
