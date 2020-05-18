@@ -292,9 +292,7 @@
 		  <div class="form-group">
 		   <label><b><i class="nc-icon nc-circle-10"></i>Responsible Person</b></label>
 		   <select name="Responsible_person" class="browser-default custom-select">
-			<option selected>Please select</option>
-			<option value="Abram"> Abram </option>
-			<option value="Brian"> Brian </option>
+			<option selected value="Abram"> Abram </option>
 			<option value="Kamo"> Kamo </option>
 			<option value="Donald"> Donald </option>
 			<option value="Kamo"> Kamo </option>
@@ -367,9 +365,7 @@
 	 <div class="form-group">
 	  <label><b><i class="nc-icon nc-circle-10"></i>Responsible Person</b></label>
 	  <select id="Responsible_person" name="Responsible_person" class="browser-default custom-select">
-		<option selected>Please select</option>
-		<option value="Abram"> Abram </option>
-		<option value="Brian"> Brian </option>
+		<option selected value="Abram"> Abram </option>
 		<option value="Kamo"> Kamo </option>
 		<option value="Donald"> Donald </option>
 		<option value="Kamo"> Kamo </option>
@@ -501,14 +497,14 @@
 	   <label><b><i class="nc-icon  nc-watch-time"></i>Column 1</b></label>
 	   <input disabled id="Column_1s" type="text" name="Column_1" class="form-control" required>
 	 </div>
-	 
+
 	 </div>
 	 <!-- employee_ids and Cancel -->
 	 <div class="modal-footer">
 	  <input type="hidden" name="employee_ids" id="employee_ids"/>
 	  <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
 	 </div>
-	 
+
 	</form>
  </div>
 </div>
