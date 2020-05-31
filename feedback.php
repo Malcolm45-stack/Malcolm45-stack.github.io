@@ -176,8 +176,8 @@
 
           <!-- Content Row -->
           <div class="row">
-			<div class="card-body" style="height:870px;width:1600px;">
-              <iframe width="1600" height= "870" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=GHy_2CVXnkuxGBM4j1LkToKI3ARWoxBKlLWhKmjTbF1UNlMzTFhBMjRaSVZRQVY1VVMwRTc3SFgzUy4u&embed=true" frameborder= "0" height="100%" width="99%" style= "position:absolute; clip:rect(0px,1600px,870px,0px); bottom:-0px;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+			<div class="card-body" style="height:870px;width:1000px;">
+              <iframe width="1000" height= "870" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=GHy_2CVXnkuxGBM4j1LkToKI3ARWoxBKlLWhKmjTbF1UNlMzTFhBMjRaSVZRQVY1VVMwRTc3SFgzUy4u&embed=true" frameborder= "0" height="100%" width="95%" style= "position:absolute; clip:rect(0px,1000px,870px,0px); bottom:-0px;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
             </div>
 		   </div>
          </div>
