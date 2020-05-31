@@ -21,7 +21,7 @@
     {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
-    
+
 	 //$result = mysqli_query($con,"SELECT * FROM employees WHERE TEAM_MEMBER ='". $_SESSION['username'] ."'");
 	 $result = mysqli_query($con,"SELECT * FROM employees");
 
@@ -50,7 +50,7 @@
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-  
+
 </head>
 
 <body id="page-top">
@@ -308,8 +308,7 @@
               <div class="form-group">
                <label><b><i class="nc-icon nc-circle-10"></i> Team Member</b></label>
                <select name="TEAM_MEMBER" class="browser-default custom-select">
-                <option selected>Please select</option>
-                <option value="Abram"> Abram </option>
+                <option selected value="Abram"> Abram </option>
                 <option value="Chaka"> Chaka </option>
                 <option value="Donald"> Donald </option>
                 <option value="Malcolm"> Malcolm </option>
@@ -362,8 +361,7 @@
               <div class="form-group">
                <label><b><i class="nc-icon nc-circle-10"></i> Team Member</b></label>
                <select id="TEAM_MEMBER" name="TEAM_MEMBER" class="browser-default custom-select">
-                <option selected="Please Select">Please Select</option>
-                <option value="Abram"> Abram </option>
+                <option selected value="Abram"> Abram </option>
                 <option value="Chaka"> Chaka </option>
                 <option value="Donald"> Donald </option>
                 <option value="Malcolm"> Malcolm </option>
@@ -376,9 +374,8 @@
 			  <div class="form-group">
 				    <label><b><i class="nc-icon nc-atom"></i>  Company</b></label>
             <select id="COMPANY" name="COMPANY" class="browser-default custom-select">
-              <option selected="Please Select">Please Select</option>
               <option value="BLUE"> Blue </option>
-              <option value="BLUE PEARL"> Blue Pearl </option>
+              <option selected value="BLUE PEARL"> Blue Pearl </option>
             </select>
 			  </div>
 			  <div class="form-group">
@@ -516,7 +513,7 @@
 
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
-  
+
 
   <script>
   $(document).ready(function(){

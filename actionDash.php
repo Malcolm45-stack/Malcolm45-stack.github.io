@@ -34,7 +34,7 @@
   <link rel ="icon" href="img/logo2.png" type="image/x-icon">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  
+
 </head>
 
 <body id="page-top">
@@ -178,9 +178,9 @@
 
           <!-- Content Row -->
           <div class="row">
+            <div class="card shadow mb-4">
 			      <div class="card-body">
-             <iframe width="1245" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNTIwYjkxODItNzQ3NS00NWZhLWFmYjgtZWI4ZjVkN2VhYmY2IiwidCI6IjRiMjFkZTUxLTU3YTEtNDNhYi05ODhkLTYyOTcyMjgzMmI2NSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
-			      </div>
+             <iframe width="1245" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmUyY2MxZjEtNmJmMS00NDU0LWJjNmEtMTJkMDFiZjljZjZjIiwidCI6IjRiMjFkZTUxLTU3YTEtNDNhYi05ODhkLTYyOTcyMjgzMmI2NSIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
 		     </div>
          </div>
       </div>
@@ -234,7 +234,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
-  
+
 
 </body>
 
