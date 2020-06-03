@@ -28,9 +28,9 @@
 	                 session_regenerate_id();
 	                  $_SESSION['loggedin'] = TRUE;
 	                  $_SESSION['username'] = $username;
-					          $_SESSION['id'] = $id;
+					  $_SESSION['id'] = $id;
 
-					          header("Location:admin.php");
+					  header("Location:admin.php");
 	                  echo 'Welcome ' . $_SESSION['username'] . '!';
 
                 }
