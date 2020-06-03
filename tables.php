@@ -334,7 +334,7 @@
 </div>
 <div class="modal-footer">
  <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
- <input type="submit" id="post" name="post" class="btn btn-success" value="Add">
+ <input type="submit" id="post" name="post" class="btn btn-primary" value="Add">
 </div>
 </form>
 
