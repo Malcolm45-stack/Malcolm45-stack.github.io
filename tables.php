@@ -148,25 +148,17 @@
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
                 <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
+                <span class="badge badge-danger badge-counter count"></span>
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
-                  Alerts Center
+                  Notifications
                 </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <!-- div class="small text-gray-500">December 12, 2019</div -->
-                    <span class="font-weight-bold">feature currently not available</span>
-                  </div>
-                </a>
-                <!--a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a -->
+                  <ul class="dropdown-items">
+                    <div class="not"></div>
+                  </ul>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
               </li>
 
@@ -299,51 +291,53 @@
   <div id="addProjectModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form action="addProjectHours.php" method="post">
-		    <div class="modal-header">
-			 <h4 class="modal-title">Add Project</h4>
-			 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			</div>
-			<div class="modal-body">
+    <form id="add_form" method="post">
+<div class="modal-header">
+<h4 class="modal-title">Add Project</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+</div>
+<div class="modal-body">
               <div class="form-group">
                <label><b><i class="nc-icon nc-circle-10"></i> Team Member</b></label>
                <select name="TEAM_MEMBER" class="browser-default custom-select">
-                <option selected value="Abram"> Abram </option>
+                <option selected>Please select</option>
+                <option value="Abram"> Abram </option>
                 <option value="Chaka"> Chaka </option>
                 <option value="Donald"> Donald </option>
                 <option value="Malcolm"> Malcolm </option>
                </select>
-			  </div>
-			  <div class="form-group">
-				<label><b><i class="nc-icon nc-badge"></i>   Project Name</b></label>
-				 <input type="text" name="PROJECT" class="form-control" required>
-			  </div>
-			  <div class="form-group">
-				<label><b><i class="nc-icon nc-atom"></i>  Company</b></label>
+ </div>
+ <div class="form-group">
+<label><b><i class="nc-icon nc-badge"></i>   Project Name</b></label>
+<input type="text" id="PRO" name="PROJECT" class="form-control" required>
+ </div>
+ <div class="form-group">
+<label><b><i class="nc-icon nc-atom"></i>  Company</b></label>
                 <select name="COMPANY" class="browser-default custom-select">
                  <option selected>Please select</option>
                  <option value="BLUE"> Blue </option>
                  <option value="BLUE PEARL"> Blue Pearl </option>
                 </select>
-			  </div>
-			  <div class="form-group">
-				 <label><b><i class="nc-icon nc-calendar-60"></i>  Date</b></label>
-				 <input type="date" name="DA_TE" class="form-control datepicker" required>
-			  </div>
-			  <div class="form-group">
-				 <label><b><i class="nc-icon nc-time-alarm"></i>  Budget Minutes</b></label>
-				 <input type="text" name="BUDGET_MIN" class="form-control" required>
-			  </div>
-			  <div class="form-group">
+ </div>
+ <div class="form-group">
+<label><b><i class="nc-icon nc-calendar-60"></i>  Date</b></label>
+<input type="date" name="DA_TE" class="form-control datepicker" required>
+ </div>
+ <div class="form-group">
+<label><b><i class="nc-icon nc-time-alarm"></i>  Budget Minutes</b></label>
+<input type="text" name="BUDGET_MIN" class="form-control" required>
+ </div>
+ <div class="form-group">
                  <label><b><i class="nc-icon  nc-watch-time"></i>  Actual Minutes</b></label>
                  <input type="text" name="ACTUAL_MIN" class="form-control" required>
               </div>
-			</div>
-			<div class="modal-footer">
-			  <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-			  <input type="submit" class="btn btn-primary" value="Add">
-			</div>
-		</form>
+</div>
+<div class="modal-footer">
+ <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+ <input type="submit" id="post" name="post" class="btn btn-success" value="Add">
+</div>
+</form>
+
 	 </div>
    </div>
   </div>
@@ -515,60 +509,108 @@
 <script src="js/demo/datatables-demo.js"></script>
 
 
-  <script>
+<script>
   $(document).ready(function(){
-	  $(document).on('click','.edit_btn', function(){
-		  var employee_id = $(this).attr("id");
-		  $.ajax({
-			  url:"fetch.php",
-			  method:"POST",
-			  data:{employee_id:employee_id},
-			  dataType:"json",
-			  success:function(data){
-				  $('#TEAM_MEMBER').val(data.TEAM_MEMBER);
-				  $('#PROJECT').val(data.PROJECT);
-				  $('#COMPANY').val(data.COMPANY);
-				  $('#DA_TE').val(data.DA_TE);
-				  $('#BUDGET_MIN').val(data.BUDGET_MIN);
-				  $('#ACTUAL_MIN').val(data.ACTUAL_MIN);
-				  $('#employee_id').val(data.id);
+ $(document).on('click','.edit_btn', function(){
+ var employee_id = $(this).attr("id");
+ $.ajax({
+ url:"fetch.php",
+ method:"POST",
+ data:{employee_id:employee_id},
+ dataType:"json",
+ success:function(data){
+ $('#TEAM_MEMBER').val(data.TEAM_MEMBER);
+ $('#PROJECT').val(data.PROJECT);
+ $('#COMPANY').val(data.COMPANY);
+ $('#DA_TE').val(data.DA_TE);
+ $('#BUDGET_MIN').val(data.BUDGET_MIN);
+ $('#ACTUAL_MIN').val(data.ACTUAL_MIN);
+ $('#employee_id').val(data.id);
           $('#updatedata').val('Update');
-				  $('#editProjectModal').modal('show');
+ $('#editProjectModal').modal('show');
           $('#Alert1').modal('show');
-			  }
-		  });
-	  });
+ }
+ });
+ });
   });
   </script>
 
   <script>
   $(document).ready(function(){
-	  $(document).on('click','.view_btn', function(){
-		  var employee_id = $(this).attr("id");
-		  $.ajax({
-			  url:"fetch.php",
-			  method:"POST",
-			  data:{employee_id:employee_id},
-			  dataType:"json",
-			  success:function(data){
-				  $('#TEAM_MEMBERS').val(data.TEAM_MEMBER);
-				  $('#PROJECTS').val(data.PROJECT);
-				  $('#COMPANYS').val(data.COMPANY);
-				  $('#DA_TES').val(data.DA_TE);
-				  $('#WEEKS').val(data.WEEK);
-				  $('#MONTH').val(data.MONTH);
-				  $('#BUDGET_MINS').val(data.BUDGET_MIN);
-				  $('#ACTUAL_MINS').val(data.ACTUAL_MIN);
-				  $('#BUDGET_HRS').val(data.BUDGET_HR);
-				  $('#ACTUAL_HRS').val(data.ACTUAL_HR);
-				  $('#VARIANCE_MINS').val(data.VARIANCE_MIN);
-				  $('#employee_id').val(data.id);
-				  $('#viewProjectModal').modal('show');
-			  }
-		  });
-	  });
+ $(document).on('click','.view_btn', function(){
+ var employee_id = $(this).attr("id");
+ $.ajax({
+ url:"fetch.php",
+ method:"POST",
+ data:{employee_id:employee_id},
+ dataType:"json",
+ success:function(data){
+ $('#TEAM_MEMBERS').val(data.TEAM_MEMBER);
+ $('#PROJECTS').val(data.PROJECT);
+ $('#COMPANYS').val(data.COMPANY);
+ $('#DA_TES').val(data.DA_TE);
+ $('#WEEKS').val(data.WEEK);
+ $('#MONTH').val(data.MONTH);
+ $('#BUDGET_MINS').val(data.BUDGET_MIN);
+ $('#ACTUAL_MINS').val(data.ACTUAL_MIN);
+ $('#BUDGET_HRS').val(data.BUDGET_HR);
+ $('#ACTUAL_HRS').val(data.ACTUAL_HR);
+ $('#VARIANCE_MINS').val(data.VARIANCE_MIN);
+ $('#employee_id').val(data.id);
+ $('#viewProjectModal').modal('show');
+ }
+ });
+ });
   });
   </script>
+
+  <script>
+   $(document).ready(function(){
+     function load_unseen_notification(view =''){
+      $.ajax({
+        url:"notification.php",
+        method:"POST",
+        data:{view:view},
+        dataType:"json",
+        success:function(data){
+          if(data.unseen_notification > 0){
+            $('.count').html(data.unseen_notification);
+            $('.dropdown-items').html(data.notification);
+          }else{
+            $('.not').html(data.notification);
+          }
+        }
+      });
+    }
+
+      load_unseen_notification();
+
+      $('#add_form').on('submit', function(event){
+        if($('#project').val() != ''){
+          var form_data = $(this).serialize();
+          $.ajax({
+            url:"addProjectHours.php",
+            method:"POST",
+            data:form_data,
+            success:function(data){
+              load_unseen_notification();
+            }
+          })
+        }
+
+      });
+
+      $(document).on('click', '.dropdown-toggle', function(){
+        $('.count').html('');
+        load_unseen_notification('yes');
+      })
+
+      setInterval(function(){
+        load_unseen_notification();
+      }, 5000);
+    });
+  </script>
+
 
 </body>
 
